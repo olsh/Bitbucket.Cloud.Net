@@ -12,6 +12,9 @@
 		Push,
 		RequirePassingBuildsToMerge,
 		ResetPullRequestApprovalsOnChange,
-		RequireDefaultReviewerApprovalsToMerge
+		RequireDefaultReviewerApprovalsToMerge,
+		SmartResetPullRequestApprovals,
+		ResetPullRequestChangesRequestedOnChange,
+		RequireNoChangesRequested
 	}
 }

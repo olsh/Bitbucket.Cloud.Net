@@ -19,7 +19,10 @@ namespace Bitbucket.Cloud.Net.Common.Converters
 			[BranchRestrictionKinds.Push] = "push",
 			[BranchRestrictionKinds.RequirePassingBuildsToMerge] = "require_passing_builds_to_merge",
 			[BranchRestrictionKinds.ResetPullRequestApprovalsOnChange] = "reset_pullrequest_approvals_on_change",
-			[BranchRestrictionKinds.RequireDefaultReviewerApprovalsToMerge] = "require_default_reviewer_approvals_to_merge"
+			[BranchRestrictionKinds.RequireDefaultReviewerApprovalsToMerge] = "require_default_reviewer_approvals_to_merge",
+			[BranchRestrictionKinds.SmartResetPullRequestApprovals] = "smart_reset_pullrequest_approvals",
+			[BranchRestrictionKinds.ResetPullRequestChangesRequestedOnChange] = "reset_pullrequest_changes_requested_on_change",
+			[BranchRestrictionKinds.RequireNoChangesRequested] = "require_no_changes_requested"
 		};
 
 		protected override string ConvertToString(BranchRestrictionKinds value)
