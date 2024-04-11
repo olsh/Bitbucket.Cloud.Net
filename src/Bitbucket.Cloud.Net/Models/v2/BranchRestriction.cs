@@ -20,9 +20,9 @@ namespace Bitbucket.Cloud.Net.Models.v2
 
 		public IEnumerable<Group> Groups { get; set; }
 
-		[JsonProperty("branch_type")]
+		[JsonProperty("branch_type", DefaultValueHandling = DefaultValueHandling.Ignore)]
 		[JsonConverter(typeof(BranchTypesConverter))]
-		public BranchTypes BranchType { get; set; }
+		public BranchTypes? BranchType { get; set; }
 
 		public string Type { get; set; }
 		public int Id { get; set; }
