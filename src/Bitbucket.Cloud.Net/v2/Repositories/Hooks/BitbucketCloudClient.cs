@@ -52,13 +52,13 @@ namespace Bitbucket.Cloud.Net
 				.ConfigureAwait(false);
 		}
 
-		public async Task<bool> DeleteRepositoryWebhookAsync(string workspaceId, string repositorySlug, string webhookId)
+		public async Task DeleteRepositoryWebhookAsync(string workspaceId, string repositorySlug, string webhookId)
 		{
 			var response = await GetHooksUrl(workspaceId, repositorySlug, webhookId)
 				.DeleteAsync()
 				.ConfigureAwait(false);
 
-			return await HandleResponseAsync<bool>(response).ConfigureAwait(false);
+			await HandleResponseAsync(response).ConfigureAwait(false);
 		}
 	}
 }
